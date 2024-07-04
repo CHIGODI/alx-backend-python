@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ This module contains the function make_multiplier """
 
 from typing import Callable
