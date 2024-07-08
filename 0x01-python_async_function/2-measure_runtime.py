@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
     Measure the total execution time for wait_n(n, max_delay),
     and return total_time / n.

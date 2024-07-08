@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
     Regular function that creates and returns an asyncio.Task
     that runs wait_random(max_delay).
