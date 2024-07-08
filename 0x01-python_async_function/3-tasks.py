@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
-"""
-    Regular function that creates and returns an asyncio.Task
-    that runs wait_random(max_delay).
-"""
+""" Tasks """
 import asyncio
+
+
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-def task_wait_random(max_delay):
+def task_wait_random(max_delay: int = 10) -> asyncio.Task:
     """
-    Regular function that creates and returns an asyncio.Task
-    that runs wait_random(max_delay).
+        Args:
+            max_delay: max wait
+
+        Return:
+            Task
     """
-    return asyncio.create_task(wait_random(max_delay))
+    task = asyncio.create_task(wait_random(max_delay))
+
+    return task
