@@ -31,6 +31,6 @@ class TestAccessNestedMap(unittest.TestCase):
                                          nested_map: Mapping,
                                          path: Sequence,
                                          expected_exception: Any) -> None:
-        """ """
+        """Test acccess_nested with invalid inputs"""
         with self.assertRaises(expected_exception):
             access_nested_map(nested_map, path)
