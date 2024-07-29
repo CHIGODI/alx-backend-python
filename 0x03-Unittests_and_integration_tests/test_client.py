@@ -8,7 +8,7 @@ from typing import Mapping
 
 
 class TestGithubOrgClient(unittest.TestCase):
-    """ """
+    """Testing GithubOrgClient class org method"""
     @parameterized.expand([
         ('google', {}),
         ('abc', {})
