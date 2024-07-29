@@ -17,7 +17,7 @@ class TestGithubOrgClient(unittest.TestCase):
     def test_org(self, org_name: str,
                  expected: Mapping,
                  mock_get) -> None:
-        """ """
+        """Testing GithubOrgClient class org method"""
         org = GithubOrgClient(org_name)
         mock_response = Mock()
         mock_response.json.return_value = expected
